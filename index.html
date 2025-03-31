@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="IWB - Recycling electronic components and offering data recovery solutions">
+    <title>IWB - Home</title>
+    <style>
+        body {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('back.jpg') center/cover no-repeat;
+            color: #cccccc; /* Dim light grey */
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background: rgba(30, 30, 30, 0.8); /* Darker grey */
+            padding: 1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 2em;
+            font-weight: bold;
+            color: #b0b0b0; /* Dimmer white */
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav li {
+            display: inline;
+            margin: 0 1.5rem;
+        }
+
+        nav a {
+            color: #999999; /* Dim grey */
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #bbbbbb; /* Lighter dim grey */
+        }
+
+        .hero {
+            text-align: center;
+            padding: 3rem 2rem;
+            background: rgba(40, 40, 40, 0.7); /* Darker grey */
+            margin: 2rem auto;
+            max-width: 450px;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            position: relative;
+            overflow: hidden;
+            animation: pulseGlow 5s infinite ease-in-out;
+        }
+
+        .hero::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(to right, rgba(100, 100, 100, 0.2), rgba(150, 150, 150, 0.2));
+            z-index: -1;
+            border-radius: inherit;
+            animation: shimmer 5s infinite linear;
+        }
+
+        .hero-content h1 {
+            font-size: 2.5em;
+            margin-bottom: 1rem;
+            color: #c0c0c0; /* Light grey */
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+        }
+
+        .hero-content .tools-link {
+            font-size: 1.2em;
+            margin-bottom: 1.5rem;
+        }
+
+        .tools-link a {
+            color: #b0b0b0; /* Dimmer white */
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease, text-shadow 0.3s ease;
+        }
+
+        .tools-link a:hover {
+            text-decoration: underline;
+            color: #bbbbbb;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+        }
+
+        footer {
+            background: rgba(30, 30, 30, 0.8); /* Darker grey */
+            color: #cccccc; /* Dim light grey */
+            text-align: center;
+            padding: 1rem;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        @keyframes pulseGlow {
+            0% { box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); }
+            50% { box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5); }
+            100% { box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); }
+        }
+
+        @keyframes shimmer {
+            0% { transform: translateX(-100%); }
+            100% { transform: translateX(100%); }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">IWB</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="software.html">Software</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="stakeholders.html">Stakeholders</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Empowering Digital Lifecycles</h1>
+            <p class="tools-link"><a href="tools.html">Discover Our Latest Tools</a></p>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2025 IWB. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

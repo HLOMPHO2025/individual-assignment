@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="IWB - Professional electronic recycling services">
+    <title>IWB - Services</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background: linear-gradient(135deg, #333333, #1A1A1A); /* Dark grey gradient */
+            color: #D1D1D1; /* Dim white */
+            margin: 0;
+            padding: 0;
+            font-family: 'Roboto Mono', monospace;
+        }
+
+        header {
+            background: rgba(40, 40, 40, 0.8); /* Dim black */
+            padding: 1.5rem 0;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav li {
+            display: inline;
+            margin: 0 1.5rem;
+        }
+
+        nav a {
+            color: #A9A9A9; /* Dim grey */
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s, text-shadow 0.3s;
+        }
+
+        nav a:hover {
+            color: #C0C0C0; /* Light grey */
+            text-shadow: 0 0 5px #C0C0C0;
+        }
+
+        main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 80vh;
+        }
+
+        .services {
+            background: rgba(50, 50, 50, 0.7); /* Dim black */
+            padding: 3rem;
+            border-radius: 10px;
+            width: 90%;
+            max-width: 1000px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(80, 80, 80, 0.3);
+        }
+
+        .services h2 {
+            text-align: center;
+            margin-bottom: 2.5rem;
+            color: #D3D3D3; /* Light grey */
+            font-size: 2.5em;
+            text-shadow: 0 0 5px #D3D3D3;
+        }
+
+        .service-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .service-item {
+            background: rgba(60, 60, 60, 0.5); /* Dim black */
+            padding: 2rem;
+            border-radius: 8px;
+            transition: transform 0.3s, box-shadow 0.3s;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .service-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+        }
+
+        .service-item img {
+            max-width: 150px;
+            height: auto;
+            margin-bottom: 1rem;
+            border-radius: 5px;
+        }
+
+        .service-item h3 {
+            color: #A9A9A9; /* Dim grey */
+            margin-bottom: 0.8rem;
+        }
+
+        .service-item p {
+            line-height: 1.6;
+        }
+
+        footer {
+            background: rgba(40, 40, 40, 0.8); /* Dim black */
+            text-align: center;
+            padding: 1.5rem 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.3);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="tools.html">Tools</a></li>
+                <li><a href="stakeholders.html">Stakeholders</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="services">
+            <h2>IWB Services</h2>
+            <div class="service-grid">
+                <div class="service-item">
+                    <img src="sr.jpg" alt="Smartphone Refurbishment">
+                    <h3>Eco-Friendly Phone Renewal</h3>
+                    <p>Reviving used smartphones with care for the planet.</p>
+                </div>
+                <div class="service-item">
+                    <img src="lp.jpg" alt="Laptop Component Recovery">
+                    <h3>Responsible Laptop Part Reclamation</h3>
+                    <p>Recovering and reusing laptop parts to reduce waste.</p>
+                </div>
+                <div class="service-item">
+                    <img src="cb.jpg" alt="Circuit Board Recycling">
+                    <h3>Sustainable Circuit Board Processing</h3>
+                    <p>Extracting valuable materials from circuit boards responsibly.</p>
+                </div>
+                <div class="service-item">
+                    <img src="ie.jpg" alt="Industrial Electronics Disposal">
+                    <h3>Green Industrial Electronics Disposal</h3>
+                    <p>Handling industrial electronics disposal with environmental consciousness.</p>
+                </div>
+                <div class="service-item">
+                    <img src="dc.jpg" alt="Data Center Decommissioning">
+                    <h3>Eco-Conscious Data Center Retirement</h3>
+                    <p>Decommissioning data centers with a focus on sustainability.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 IWB. All rights reserved.</p>
+    </footer>
+</body>
+</html>

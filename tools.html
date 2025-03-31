@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="IWB - Data recovery and destruction tools">
+    <title>IWB - Tools</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background: linear-gradient(135deg, #333333, #444444, #555555); /* Grey to light black gradient */
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            color: #cccccc; /* Dim light grey */
+            margin: 0;
+            padding: 0;
+            font-family: 'Roboto Mono', monospace;
+        }
+
+        header {
+            background: rgba(0, 0, 0, 0.8); /* Slightly more opaque dark background */
+            padding: 1.5rem;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav li {
+            display: inline;
+            margin: 0 2rem;
+        }
+
+        nav a {
+            color: #999999; /* Dim grey */
+            text-decoration: none;
+            transition: color 0.3s, transform 0.2s;
+            font-size: 1.1em;
+        }
+
+        nav a:hover {
+            color: #bbbbbb; /* Lighter dim grey */
+            transform: translateY(-2px);
+        }
+
+        main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 80vh;
+        }
+
+        .tools {
+            background: rgba(30, 30, 30, 0.7); /* Darker grey background */
+            padding: 3rem;
+            border-radius: 12px;
+            width: 90%;
+            max-width: 900px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+            backdrop-filter: blur(15px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .tools h2 {
+            text-align: center;
+            margin-bottom: 2.5rem;
+            color: #aaaaaa; /* Medium dim grey */
+            font-size: 2.8em;
+            letter-spacing: 1px;
+        }
+
+        .tool {
+            margin-bottom: 2.5rem;
+            padding: 2rem;
+            border-radius: 10px;
+            background: rgba(50, 50, 50, 0.5); /* Slightly lighter grey tool background */
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            transition: transform 0.3s, box-shadow 0.3s;
+            color: #b0b0b0; /* Dimmer white */
+        }
+
+        .tool:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+        }
+
+        .tool h3 {
+            margin-bottom: 1rem;
+            color: #c0c0c0; /* Light grey */
+            font-size: 1.6em;
+            font-weight: 700;
+        }
+
+        .tool p {
+            margin-bottom: 1.2rem;
+            line-height: 1.7;
+            font-size: 1.15em;
+        }
+
+        .tool strong {
+            color: #a0a0a0; /* Slightly darker grey */
+        }
+
+        footer {
+            background: rgba(0, 0, 0, 0.8);
+            text-align: center;
+            padding: 1.5rem;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.4);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="tools.html">Tools</a></li>
+                <li><a href="stakeholders.html">Stakeholders</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="tools">
+            <h2>Cyber Solutions Suite</h2>
+            <div class="tool">
+                <h3>Data Recovery Pro</h3>
+                <p>Advanced algorithms for retrieving lost files from damaged drives.</p>
+                <p><strong>Monthly:</strong> R600 | <strong>Annual:</strong> R4100</p>
+            </div>
+            <div class="tool">
+                <h3>Secure Erase</h3>
+                <p>Military-grade data destruction with certification reporting.</p>
+                <p><strong>Monthly:</strong> R700 | <strong>Annual:</strong> R5000</p>
+            </div>
+            <div class="tool">
+                <h3>Disk Analyzer</h3>
+                <p>Comprehensive storage diagnostics and health monitoring.</p>
+                <p><strong>Monthly:</strong> R800 | <strong>Annual:</strong> R6200</p>
+            </div>
+            <div class="tool">
+                <h3>File Shredder</h3>
+                <p>Permanent file deletion with multiple overwrite methods.</p>
+                <p><strong>Monthly:</strong> R925 | <strong>Annual:</strong> R7050</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 IWB. All rights reserved.</p>
+    </footer>
+</body>
+</html>
